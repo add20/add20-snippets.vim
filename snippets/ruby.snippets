@@ -1,0 +1,4 @@
+snippet class class .. end
+  class ${1:`substitute(Filename(), '\(_\|^\)\(.\)', '\u\2', 'g')`}
+    ${2}
+  end
