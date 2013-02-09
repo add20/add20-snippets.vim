@@ -2,3 +2,6 @@ snippet class class .. end
   class ${1:`substitute(Filename(), '\(_\|^\)\(.\)', '\u\2', 'g')`}
     ${2}
   end
+
+snippet require require File.expand_path(...)
+  require File.expand_path("${1:filename}", File.dirname(__FILE__))
